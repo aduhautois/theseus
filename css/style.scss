@@ -1,0 +1,396 @@
+/*SCSS DOCUMENT*/
+
+/*COLORS*/
+
+$blue: #4DBCE9;
+$blueaccent: #199acc;
+
+$darkblue: #26ADE4;
+$darkblueaccent: #1688b6;
+
+$green: #D1E751;
+$greenaccent: #b0ca1c;
+
+$white: #ffffff;
+
+$black: #333333;
+
+/*MIXINS*/
+
+@mixin true-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*UTILITY*/
+
+.max-width {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.block-center {
+    display: block;
+    margin: auto;
+}
+
+/*GENERAL*/
+
+* {
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    color: $black;
+    font-size: 12px;
+    font-family: sans-serif;
+    letter-spacing: .015em;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: $darkblueaccent;
+    position: relative;
+    text-decoration: underline;
+
+    -webkit-transition: all .15s ease-in-out;
+            transition: all .15s ease-in-out;
+}
+
+hr {
+    border-top: 1px solid #ccc;
+    margin: 5em 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.8em;
+    font-weight: normal;
+    padding: 1em 0;
+}
+
+h3 {
+    font-size: 2.5em;
+    padding: 1em 0;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+.col {
+    float: left;
+}
+
+.three-fourths {
+    width: 75%;
+}
+
+.half {
+    width: 50%;
+}
+
+.third {
+    width: 33.3333%;
+}
+
+.fourth {
+    width: 25%;
+}
+
+/*NAV*/
+nav {
+    box-shadow: 0px 5px 40px #444;
+    font-size: 1.25em;
+    position: relative;
+    width: 100%;
+    z-index: 999;
+
+    a {
+        color: $black;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .ancillary,
+    .nav-int {
+        margin: 0 auto;
+    }
+
+    .ancillary {
+        display: block;
+        float: none;
+        padding: 1.25em 0 0;
+        text-align: right;
+    }
+
+    .nav-int {
+        display: table;
+        width: 100%;
+    }
+
+    .logo {
+        display: table-cell;
+        font-size: 2em;
+        font-weight: bolder;
+        line-height: 1.75;
+        padding: .75em;
+        text-transform: uppercase;
+        vertical-align: middle;
+        width: 25%;
+    }
+
+    .menu-wrap {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    ul {
+        float: right;
+        padding: 0 2.75em 0 0;
+    }
+
+    li {
+        display: inline-block;
+        padding: 0 0 0 3em;
+    }
+
+    .nav-link:after {
+        content: ' ';
+        background-color: $darkblueaccent;
+        bottom: -.9em;
+        height: 4px;
+        left: 0;
+        position: absolute;
+        width: 0;
+
+        -webkit-transition: all .25s ease-in-out;
+                transition: all .25s ease-in-out;
+    }
+
+    .nav-link:hover {
+        color: $darkblueaccent;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+}
+
+.button {
+    border-radius: 5px;
+    color: $white;
+    display: block;
+    font-weight: bold;
+    min-width: 10em;
+    padding: .75em 1.5em .75em;
+    position: relative;
+    text-align: center;
+
+    -webkit-transition: all .15s ease-in-out;
+            transition: all .15s ease-in-out;
+}
+
+    .button::after {
+        content: ' ';
+        border-radius: 5px;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 3px;
+        width: 100%;
+        z-index: -1;
+    }
+
+.blue {
+    background-color: $blue;
+}
+
+.green {
+    background-color: $green;
+}
+
+.darkblue {
+    background-color: $darkblue;
+}
+
+.black {
+    background-color: $black;
+}
+
+.button.blue::after {
+    background-color: $blueaccent;
+}
+
+    .button.blue:hover {
+        background-color: $blueaccent;
+    }
+
+.button.green::after {
+    background-color: $greenaccent;
+}
+
+    .button.green:hover {
+        background-color: $greenaccent;
+    }
+
+/*VIDEO*/
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    height: 0;
+    padding-bottom: 56.1702%;
+    position: relative;
+    z-index: 0;
+
+    .cta {
+        bottom: 0;
+        font-size: 2em;
+        padding: 3em 4em;
+        position: absolute;
+        left: 0;
+
+        .button {
+            display: inline-block;
+            margin: 1em 0;
+            min-width: 0px;
+            text-decoration: none;
+            width: auto;
+        }
+
+        img {
+            display: block;
+            width: 7em;
+        }
+
+        h2 {
+            color: $white;
+            font-size: 2.75em;
+            font-weight: lighter;
+            padding-bottom: .2em;
+        }
+
+        p {
+            color: $white;
+            max-width: 20em;
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .homepage-hero-module {
+        padding-bottom: 45.1702%;
+    }
+}
+
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    z-index: -1;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+/* CONTENT */
+
+.container {
+}
+
+    .container.top {
+        box-shadow: 0 -5px 40px #444;
+        position: relative;
+        z-index: 1;
+    }
+
+    .container-int {
+        padding: 5.5em 2.75em;
+        z-index: 2;
+    }
+
+.section.intro {
+}
+
+    .intro-int {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+
+        h2,
+        p {
+            color: $white;
+        }
+    }
+
+.section.services {
+    img {
+        max-width: 7em;
+    }
+
+    h2 {
+        padding: 1em 0 2em;
+    }
+
+    h3 {
+        font-weight: normal;
+    }
+
+    .half {
+        padding: 3em;
+    }
+
+    .col.border {
+        border-right: 1px solid #ddd;
+    }
+}
