@@ -20,7 +20,7 @@
             <div class="ancillary max-width">
                 <ul>
                     <li>
-                        <a href="#" class="button blue">1-800-555-5555</a>
+                        <a href="#" class="button blue">1-319-560-6224</a>
                     </li>
                 </ul>
 
@@ -189,15 +189,53 @@
 
             <div class="section certifications">
                 <div class="container-int max-width">
-                    
+                    <div class="intro-int">
+                        <h3 class="text-center">Technologies</h3>
+
+                        <p>
+                            Yo we need some stuff here.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <footer>
-            <container-int>
+        <footer class="black">
+            <div class="container-int max-width">
+                <div class="col third">
+                    <ul>
+                        <li>
+                            some shit
+                        </li>
 
-            </container-int>
+                        <li>
+                            some shit
+                        </li>
+
+                        <li>
+                            some shit
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col third">
+                    <ul>
+                        <li>
+                            some shit
+                        </li>
+
+                        <li>
+                            some shit
+                        </li>
+
+                        <li>
+                            some shit
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="clear"></div>
+            </div>
         </footer>
 
         <script src="js/libraries/jquery-3.2.1.min.js"></script>

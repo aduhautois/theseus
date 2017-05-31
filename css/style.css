@@ -58,7 +58,8 @@ h3 {
   padding: 1em 0; }
 
 p {
-  font-size: 1.4em; }
+  font-size: 1.5em;
+  padding: 0 0 1.5em; }
 
 .col {
   float: left; }
@@ -162,7 +163,8 @@ nav {
   background-color: #26ADE4; }
 
 .black {
-  background-color: #333333; }
+  background-color: #333333;
+  color: #ffffff; }
 
 .button.blue::after {
   background-color: #199acc; }
@@ -190,6 +192,8 @@ nav {
     padding: 3em 4em;
     position: absolute;
     left: 0; }
+    .homepage-hero-module .cta p {
+      padding: 0; }
     .homepage-hero-module .cta .button {
       display: inline-block;
       margin: 1em 0;
@@ -262,9 +266,6 @@ nav {
   max-width: 600px;
   margin: 0 auto;
   text-align: center; }
-  .intro-int h2,
-  .intro-int p {
-    color: #ffffff; }
 
 .section.services img {
   max-width: 7em; }
