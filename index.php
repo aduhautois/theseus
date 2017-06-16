@@ -8,6 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="css/animate.css" type="text/css" media="screen">
         <link rel="stylesheet" href="css/style.css?ver=1.0.0" type="text/css" media="screen">
         <!--[if lt IE 9]>
@@ -18,9 +19,13 @@
     <body>
         <nav>
             <div class="ancillary max-width">
+                <div class="logo-img">
+
+                </div>
+
                 <ul>
                     <li>
-                        <a href="#" class="button blue">1-319-560-6224</a>
+                        <a href="tel:+1-319-560-6224" class="button blue">1-319-560-6224</a>
                     </li>
                 </ul>
 
@@ -33,23 +38,23 @@
                 <div class="menu-wrap">
                     <ul>
                         <li>
-                            <a href="#" class="nav-link">Our Company</a>
+                            <a href="#our-company" class="nav-link">Our Company</a>
                         </li>
 
                         <li>
-                            <a href="#" class="nav-link">Services</a>
+                            <a href="#our-services" class="nav-link">Services</a>
                         </li>
 
                         <li>
-                            <a href="#" class="nav-link">Certifications</a>
+                            <a href="#our-certs" class="nav-link">Certifications</a>
                         </li>
 
                         <li>
-                            <a href="#" class="nav-link">Contact Us</a>
+                            <a href="/contact" class="nav-link">Contact Us</a>
                         </li>
 
                         <li>
-                            <a href="#" class="button green">Request Information</a>
+                            <a href="/information" class="button green">Request Information</a>
                         </li>
                     </ul>
                 </div>
@@ -73,22 +78,22 @@
 
                 <div class="cta">
                     <h2>Helping schools<br />help youth</h2>
-                    <p>Dedicated data management professionals specializing in Infinite Campus data integration.</p>
+                    <p>Dedicated data management professionals specializing in large amounts of stuff.</p>
 
                     <a href="#" class="button blue">Learn More</a>
 
-                    <img src="img/infinitecampus.svg" />
+                    <img src="img/MicrosoftSQLServer.png" />
                 </div>
             </div>
         </div>
 
         <div class="container top">
-            <div class="section intro black">
+            <div class="section intro" id="our-company">
                 <div class="container-int max-width">
                     <div class="intro-int">
                         <img src="img/cropped-logo.png" class="block-center" />
 
-                        <h2 class="text-center">THESEUS</h2>
+                        <h2 class="text-center"><span class="green-border">THESEUS</span></h2>
 
                         <p>Theseus is a team of dedicated data management professionals. Our focus is always on
                             meeting the unique needs of our clients. In order to effectively meet these dynamic
@@ -98,9 +103,11 @@
                 </div>
             </div>
 
-            <div class="section services">
+            <hr />
+
+            <div class="section services" id="our-services">
                 <div class="container-int max-width">
-                    <h2 class="text-center">What We Do</h2>
+                    <h2 class="text-center"><span class="blue-border">What We Do</span></h2>
 
                     <div class="col half border">
                         <img src="img/database.svg" class="block-center" />
@@ -162,10 +169,12 @@
                 </div>
             </div>
 
-            <div class="section about black">
+            <hr />
+
+            <div class="section about" id="about-us">
                 <div class="container-int max-width">
                     <div class="intro-int">
-                        <h2 class="text-center">About Our Company</h2>
+                        <h2 class="text-center"><span class="green-border">About Our Company</span></h2>
 
                         <p>Theseus is a team of dedicated data management professionals. Our focus is always on
                             meeting the unique needs of our clients. In order to effectively meet these dynamic
@@ -187,13 +196,15 @@
                 </div>
             </div>
 
-            <div class="section certifications">
+            <hr />
+
+            <div class="section certifications" id="our-certs">
                 <div class="container-int max-width">
                     <div class="intro-int">
-                        <h3 class="text-center">Technologies</h3>
+                        <h2 class="text-center"><span class="blue-border">Technologies</span></h2>
 
                         <p>
-                            Yo we need some stuff here.
+                            Yo we need some stuff here. I suggest a list of.. certifications or something.
                         </p>
                     </div>
                 </div>
@@ -205,31 +216,43 @@
                 <div class="col third">
                     <ul>
                         <li>
-                            some shit
+                            &copy; 2017 Theseus, Inc.
                         </li>
 
                         <li>
-                            some shit
+                            Michael J. Brown
                         </li>
 
                         <li>
-                            some shit
+                            PO Box information?
+                        </li>
+
+                        <li>
+                            City, State, Zip
+                        </li>
+
+                        <li>
+                            <a href="tel:+1-319-560-6244">1-319-560-6244</a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:solutions@gotheseus.com">Solutions@GoTheseus.com</a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="col third">
+                <div class="col right social">
                     <ul>
                         <li>
-                            some shit
+                            <a href="#"><img src="img/facebook-logo-button.svg" /></a>
                         </li>
 
                         <li>
-                            some shit
+                            <a href="#"><img src="img/twitter-logo-button.svg" /></a>
                         </li>
 
                         <li>
-                            some shit
+                            <a href="#"><img src="img/linkedin-logo-button.svg" /></a>
                         </li>
                     </ul>
                 </div>

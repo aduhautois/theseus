@@ -59,7 +59,7 @@ $black: #333333;
 body {
     color: $black;
     font-size: 12px;
-    font-family: sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: .015em;
 
     -webkit-font-smoothing: antialiased;
@@ -75,6 +75,10 @@ a {
             transition: all .15s ease-in-out;
 }
 
+a:hover {
+    color: $greenaccent;
+}
+
 hr {
     border-top: 1px solid #ccc;
     margin: 5em 0;
@@ -85,9 +89,11 @@ h1 {
 }
 
 h2 {
-    font-size: 2.8em;
+    font-size: 4.8em;
     font-weight: normal;
+    line-height: 1.1;
     padding: 1em 0;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -96,12 +102,18 @@ h3 {
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.6em;
+    font-weight: 300;
+    line-height: 1.2;
     padding: 0 0 1.5em;
 }
 
 .col {
     float: left;
+}
+
+.col.right {
+    float: right;
 }
 
 .three-fourths {
@@ -120,10 +132,28 @@ p {
     width: 25%;
 }
 
+hr {
+    background-color: #dddddd;
+    height: 1px;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.green-border {
+    border-bottom: 4px solid $greenaccent;
+    padding: 0 0 .25em;
+}
+
+.blue-border {
+    border-bottom: 4px solid $blueaccent;
+    padding: 0 0 .25em;
+}
+
 /*NAV*/
 nav {
     box-shadow: 0px 5px 40px #444;
-    font-size: 1.25em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
     position: relative;
     width: 100%;
     z-index: 999;
@@ -143,6 +173,7 @@ nav {
         display: block;
         float: none;
         padding: 1.25em 0 0;
+        position: relative;
         text-align: right;
     }
 
@@ -153,13 +184,24 @@ nav {
 
     .logo {
         display: table-cell;
+        font-family: 'Roboto Condensed', sans-serif;
         font-size: 2em;
-        font-weight: bolder;
+        font-weight: 700;
         line-height: 1.75;
         padding: .75em;
         text-transform: uppercase;
         vertical-align: middle;
         width: 25%;
+    }
+
+    .logo-img {
+        background-image: url(../img/cropped-logo.png);
+        background-size: contain;
+        float: left;
+        height: 4em;
+        margin: 0 0 0 1.5em;
+        position: absolute;
+        width: 4em;
     }
 
     .menu-wrap {
@@ -223,6 +265,10 @@ nav {
         width: 100%;
         z-index: -1;
     }
+
+.button:hover {
+    color: $white;
+}
 
 .blue {
     background-color: $blue;
@@ -288,18 +334,18 @@ nav {
 
         img {
             display: block;
-            width: 7em;
+            width: 10em;
         }
 
         h2 {
-            color: $white;
+            color: $black;
             font-size: 2.75em;
             font-weight: lighter;
             padding-bottom: .2em;
         }
 
         p {
-            color: $white;
+            color: $black;
             max-width: 20em;
         }
     }
@@ -355,7 +401,7 @@ nav {
 }
 
     .container.top {
-        box-shadow: 0 -5px 40px #444;
+        // box-shadow: 0 -5px 40px #444;
         position: relative;
         z-index: 1;
     }
@@ -393,5 +439,86 @@ nav {
 
     .col.border {
         border-right: 1px solid #ddd;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    border-bottom: 4px solid $greenaccent;
+    position: relative;
+}
+
+footer::after {
+    content: ' ';
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    border-bottom: 4px solid $blueaccent;
+}
+
+footer ul {
+    list-style-type: none;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+footer ul li {
+    padding: .05em 0;
+}
+
+footer a {
+    color: $greenaccent;
+}
+
+footer a:hover {
+    color: $darkblueaccent;
+}
+
+.social ul li {
+    display: inline-block;
+    padding: 0 0 0 1em;
+}
+
+.social img {
+    width: 2.5em;
+
+    -webkit-transition: all .15s ease-in-out;
+            transition: all .15s ease-in-out;
+}
+
+.social img:hover {
+    opacity: .5;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 10px;
+    }
+
+    .homepage-hero-module {
+        height: auto;
+        padding-bottom: 0;
+        position: relative;
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.1702%;
+    }
+
+    .homepage-hero-module .cta {
+        position: relative;
+        padding: 2em 1em;
+    }
+
+    .homepage-hero-module .cta h2 {
+        padding: 0;
+    }
+
+    .homepage-hero-module .cta img {
+        margin: 2em auto 0;
     }
 }
