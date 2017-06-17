@@ -6,6 +6,10 @@
     });
 
     $( document ).ready( function() {
-        $( nav ).sticky({ topSpacing: 0 });
+        $( 'nav' ).sticky({ topSpacing: 0 });
+    });
+
+    $( '.mobile-menu' ).on( 'click', function() {
+        $( '.menu-wrap' ).slideToggle();
     });
 })( jQuery );
